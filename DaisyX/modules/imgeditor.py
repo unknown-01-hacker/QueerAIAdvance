@@ -450,5 +450,5 @@ Bright,Circle,RemBG,Blur,Border,Flip,Glitch,Sticker maker and more
 
 - /edit <i> reply to image</i> : Open the image editor
 
-<i> Special credits to TroJanzHEX </i>
+
 """
