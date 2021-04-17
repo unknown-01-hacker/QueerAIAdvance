@@ -52,11 +52,11 @@ async def _(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Daisy found some torrents for you. Take a look 👇",
+        "Queer ♕ found some torrents for you. Take a look 👇",
         buttons=[
             [
                 Button.inline(
-                    "📤 Get Torrents from Sumanjay's API",
+                    "📤 Get Torrents from Queer ♕'s API",
                     data=f"torrent-{sender}|{search}|{index}|{chatid}|{msgid}",
                 )
             ],
@@ -172,7 +172,7 @@ async def paginate_prevtorrent(event):
     try:
         results = requests.get(url).json()
     except Exception as e:
-        await event.reply("Sorry, Daisy Cant found any torrents for that word")
+        await event.reply("Sorry, Queer ♕ Cant found any torrents for that word")
         print(e)
         return
     vector = len(results)
@@ -314,7 +314,7 @@ async def torrentstop(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Thanks for using.\n❤️ from [Daisy X](t.me/DaisyXBot) !",
+        "Thanks for using.\n❤️ from [Queer ♕](t.me/QueerAIBot) !",
         link_preview=False,
     )
 
@@ -394,8 +394,7 @@ async def paginate_nexttorrent(event):
 
 __help__ = """
  - /torrent <i>text</i>: Search for torrent links
-
-Special Credits to Sumanjay for api and also for julia project
+    
 """
 
 __mod_name__ = "Torrent"
