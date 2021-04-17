@@ -396,7 +396,7 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Julia
+You can now send polls anonymously with Queer ♕
 Here is how you can do it:
 <b> Parameters </b> -
  ▪️ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
@@ -414,7 +414,7 @@ Reply to the poll with `/stoppoll [poll-id]` to stop the poll
 <b> Fogot poll id </b>
 /forgotpollid - to reset poll
 
-Special credits to Julia project and Friday Userbot
+
 """
 
 
