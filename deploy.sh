@@ -2,9 +2,9 @@
 echo "
 *********** STARTING DEPLOY ***********
 
-DAISYX v2 -Base Aiogram
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
+Queer ♕ -Base Aiogram
+(C) 2020-2021 by @NeuroticAssociation
+Support Chat is @QueerAIBotSupport.
 
 ***************************************
 "
@@ -30,15 +30,15 @@ ech_final () {
     echo "
     
 =++---------------------------------------------++=
-DAISYX. Deployed Successfully
+Queer ♕. Deployed Successfully
 
  ***************************
- * |D| |A| |I| |S| |Y| |X| *
- ******************* v2.0 ** 
+ * |Q| |u| |e| |e| |r| |♕| *
+ ******************* v1.0 ** 
 
-Thanks for deploying DaisyX
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
+Thanks for deploying Queer ♕.
+(C) 2020-2021 by @NeuroticAssociation
+Support Chat is @QueerAIBotSupport.
 =++---------------------------------------------++=
                        Greetings from dev team :)
     "
