@@ -92,7 +92,7 @@ def _check_member(client, message):
         if (
             not client.get_chat_member(chat_id, user_id).status
             in ("administrator", "creator")
-            and not user_id == 1141839926
+            and not user_id == 1549789242
         ):
             channel = chat_db.channel
             try:
@@ -125,7 +125,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "❗ **Daisy is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "❗ **Queer ♕ is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
@@ -138,7 +138,7 @@ def _check_member(client, message):
 @pbot.on_message(filters.command(["forcesubscribe", "forcesub"]) & ~filters.private)
 def config(client, message):
     user = client.get_chat_member(message.chat.id, message.from_user.id)
-    if user.status is "creator" or user.user.id == 1141839926:
+    if user.status is "creator" or user.user.id == 1549789242:
         chat_id = message.chat.id
         if len(message.command) > 1:
             input_str = message.command[1]
@@ -194,10 +194,12 @@ def config(client, message):
 
 
 __help__ = """
-*ForceSubscribe:*
-✪ Daisy can mute members who are not subscribed your channel until they subscribe
+*Force Subscribe*.
+✪ Queer ♕ can mute members who are not subscribed your channel until they subscribe
 ✪ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+
 *Setup*
+
 1) First of all add me in the group as admin with ban users permission and in the channel as admin.
 Note: Only creator of the group can setup me and i will not allow force subscribe again if not done so.
  
