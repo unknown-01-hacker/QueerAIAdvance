@@ -1,16 +1,16 @@
 {
-  "name": "DaisyX",
+  "name": "Queer ♕",
   "description": "?",
   "keywords": [
     "telegram",
-    "Daisy",
+    "Queer ♕",
     "plugin",
-    "telegram-DaisyX",
+    "telegram-Queer ♕",
     "fuck-TG"
   ],
-  "repository": "https://github.com/TeamDaisyX/Daisy-x",
+  "repository": "https://github.com/ChankitSaini/QueerAIAdvance/",
   "website": "daisyproject.studio",
-  "success_url": "t.me/DaisyXUpdates",
+  "success_url": "t.me/QueerAIBotUpdates",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -63,7 +63,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Only for fork users else don't change",
-      "value": "https://github.com/TeamDaisyX/DaisyX-v2.0",
+      "value": "https://github.com/ChankitSaini/QueerAIAdvance",
       "required": false  
     },
     "API_PORT": {
