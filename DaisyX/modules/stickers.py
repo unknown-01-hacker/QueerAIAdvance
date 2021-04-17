@@ -87,7 +87,7 @@ async def stickerset_exists(conv, setname):
 
 
 def resize_image(image, save_locaton):
-    """Copyright Rhyse Simpson:
+    """Copyright Chankit Saini:
     https://github.com/skittles9823/SkittBot/blob/master/tg_bot/modules/stickers.py
     """
     im = Image.open(image)
@@ -119,7 +119,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-@Daisy(pattern="^/searchsticker (.*)")
+@QueerAIBot(pattern="^/searchsticker (.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     combot_stickers_url = "https://combot.org/telegram/stickers?q="
@@ -192,7 +192,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "DaisyX"
+DEFAULTUSER = "Queer ♕"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 
