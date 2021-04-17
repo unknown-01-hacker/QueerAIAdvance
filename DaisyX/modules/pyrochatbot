@@ -322,7 +322,7 @@ __help__ = """
 <i> PRESENTING Queer ♕ AI 1.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
 
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
-*DaisyAI can detect and reply upto 200 languages by now*
+*Queer ♕ can detect and reply upto 200 languages by now*
  - /chatbot EN : Enables English only chatbot
  
 <b> Lydia </b>
@@ -348,7 +348,7 @@ __mod_name__ = "Assistant"
 
 
 #    Copyright (C) 2020-2021 by @InukaAsith
-#    This programme is a part of DaisyX (TG bot) project
+#    This programme is a part of QueerAIBot (TG bot) project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
