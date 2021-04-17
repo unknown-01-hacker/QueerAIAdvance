@@ -109,7 +109,7 @@ async def _(event):
     if not event.chat_id in en_chats:
         en_chats.append(event.chat_id)
         await event.reply("English only AI activated!")
-    await event.reply("AI is already enabled for this chat!")
+    await event.reply("Queer ♕AI is already enabled for this chat!")
     return ""
 
 
@@ -132,9 +132,9 @@ async def _(event):
         sql.set_ses(chat.id, ses_id, expires)
         if event.chat_id in en_chats:
             en_chats.remove(event.chat_id)
-        await event.reply("AI successfully enabled for this chat!")
+        await event.reply("Queer ♕ AI successfully enabled for this chat!")
         return
-    await event.reply("AI is already enabled for this chat!")
+    await event.reply("Queer ♕ AI is already enabled for this chat!")
     return ""
 
 
@@ -150,12 +150,12 @@ async def _(event):
     await tbot.get_entity(send)
     is_chat = sql.is_chat(chat.id)
     if not is_chat:
-        await event.reply("AI isn't enabled here in the first place!")
+        await event.reply("Queer ♕ AI isn't enabled here in the first place!")
         return ""
     if event.chat_id in en_chats:
         en_chats.remove(event.chat_id)
     sql.rem_chat(chat.id)
-    await event.reply("AI disabled successfully!")
+    await event.reply("Queer ♕ AI disabled successfully!")
 
 
 @tbot.on(events.NewMessage(pattern=None))
@@ -288,23 +288,25 @@ async def _(event):
 
 __help__ = """
 <b> Chatbot </b>
-<i> PRESENTING DAISY AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
+<i> PRESENTING Queer ♕ AI 1.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
+
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
-* DaisyAI can detect and reply upto 200 languages by now *
+*Queer ♕ can detect and reply upto 200 languages by now*
  - /chatbot EN : Enables English only chatbot
  
 <b> Lydia </b>
-<i> PRESENTING DAISY'S LYDIA, EXCLUSIVE CHAT FEATURE DETECT UPTO 200 LANGUAGES & REPLY USING LYDIA AI</i>
+<i> PRESENTING Queer ♕'S LYDIA, EXCLUSIVE CHAT FEATURE DETECT UPTO 200 LANGUAGES & REPLY USING LYDIA AI</i>
+
  - /addlydia: Activates lydia on your group
-* Daisy AI can detect and reply upto 200 languages by now *
+*Daisy AI can detect and reply upto 200 languages by now*
  - /enlydia : Enables English only chat AI
  - /rmlydia : Deactivates lydia on your group (UNSTABLE)
  
 <b> Assistant </b>
- - /ask <i>question</i>: Ask question from daisy
+ - /ask <i>question</i>: Ask question from Queer ♕
  - /ask <i> reply to voice note</i>: Get voice reply
  
 <i> Lydia AI can be unstable sometimes </i>
 """
 
-__mod_name__ = "AI Assistant"
+__mod_name__ = "Assistant"
