@@ -87,7 +87,7 @@ async def __(event):
                 event.chat_id,
                 m,
                 voice_note=True,
-                caption="Bass Boosted, \nDone By @DaisySupport_Official",
+                caption="Bass Boosted, \nDone By @QueerAIBot",
             )
 
             os.remove(m)
@@ -100,7 +100,7 @@ async def __(event):
             await tbot.send_file(
                 event.chat_id,
                 m,
-                caption="Bass Boosted, \nDone By @DaisySupport_Official",
+                caption="Bass Boosted, \nDone By @QueerAIBot",
             )
 
             os.remove(m)
