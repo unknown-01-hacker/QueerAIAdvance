@@ -133,9 +133,10 @@ Make it easy to promote and demote users with the admin module!
 - /users: list all the users in the chat
 - /zombies: counts the number of deleted account in your group
 - /kickthefools: kicks all members inactive from 1 week
-Example:
+
+*Example:*
 Sometimes, you promote or demote an admin manually, and Daisy doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
 This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command; that'll force Daisy to check who the admins are again.
 
-<i> Special credits to Julia Project </i>
+
 """
