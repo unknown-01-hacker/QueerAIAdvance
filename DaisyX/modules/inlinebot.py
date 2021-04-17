@@ -32,7 +32,7 @@ async def inline_handler(event):
     query = event.text
     if not query:
         results = builder.article(
-            title="Hello, I'm Daisy! Touch for help!",
+            title="Hello, I'm Queer ♕! Touch for help!",
             text=f"Wonder What All You Can Do With Me? Click Below To Know More.",
             buttons=custom.Button.inline("Explore!", data="explore"),
         )
@@ -42,7 +42,7 @@ async def inline_handler(event):
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"explore")))
 async def explore(event):
-    tbot_username = "DaisyXBot"
+    tbot_username = "QueerAIBot"
     LEGENDX = [
         [
             Button.switch_inline("Youtube", query="yt", same_peer=True),
@@ -56,14 +56,14 @@ async def explore(event):
         ]
     ]
     LEGENDX += [[Button.switch_inline("Pornhub", query="ph", same_peer=True)]]
-    oof_stark = f"""**Inline bot service powered by @DaisyXBot**
+    oof_stark = f"""**Inline bot service powered by @QueerAIBot**
 **I'm fully functional in groups. Also I have some cool stuff in inline too**
 **- Search Youtube Video's / Download In Any Chat Itself!**
 **How? :** `@{tbot_username} yt <query>`
 **Example :** `@{tbot_username} yt faded`
 **- Google Search!**
 **How? :** `@{tbot_username} google <query>`
-**Example :** `@{tbot_username} google TeamDaisyX github`
+**Example :** `@{tbot_username} google ChankitSaini github`
 **- Deezer Search!**
 **How? :** `@{tbot_username} deezer <query>`
 **Example :** `@{tbot_username} deezer why we lose`
