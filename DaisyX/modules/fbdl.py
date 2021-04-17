@@ -76,12 +76,12 @@ async def _(event):
         await event.reply("Video Downloaded Successfully. Starting To Upload.")
 
         kk = f"{filename}.mp4"
-        caption = f"Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official."
+        caption = f"Facebook Video downloaded Successfully by @QueerAIBot.\nSay hi to devs @QueerAIBotSupport."
 
         await tbot.send_file(
             event.chat_id,
             kk,
-            caption="Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official.",
+            caption="Facebook Video downloaded Successfully by @QueerAIBot.\nSay hi to devs @QueerAIBotSupport.",
         )
         os.system(f"rm {kk}")
     else:
