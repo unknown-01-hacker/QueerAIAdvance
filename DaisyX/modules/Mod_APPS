@@ -82,7 +82,8 @@ async def mudapk(client, message):
     await pablo.delete()
 
 
-# __mod_name__ = "Mod Apps"
-# __help__ = """
-# - /mod [app name] : Download and upload mod apps
-# """
+__help__ = """
+- /mod [app name] : Download and upload mod apps
+
+"""
+__mod_name__ = "Mod Apps"
