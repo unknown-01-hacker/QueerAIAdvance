@@ -21,7 +21,7 @@
 
 ### The first AioGram based modified groupmanagement bot fully optimized for heroku deploys
 ### 
-## Avaiilable on Telegram as [@QueerAIBot](https://t.me/QueerAIBot)
+## Available on Telegram as [@QueerAIBot](https://t.me/QueerAIBot)
 
 # 🏃‍♂️ Easy Deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ChankitSaini/QueerAIAdvance.git)
