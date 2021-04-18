@@ -119,7 +119,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-@QueerAIBot(pattern="^/searchsticker (.*)")
+@DaisyXBot(pattern="^/searchsticker (.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     combot_stickers_url = "https://combot.org/telegram/stickers?q="
