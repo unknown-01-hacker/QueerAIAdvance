@@ -288,17 +288,17 @@ async def _(event):
 
 __help__ = """
 <b> Chatbot </b>
-<i> PRESENTING Queer ♕ AI 1.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
+<i> Presenting Queer ♕ AI 1.0. The only AI system which can detect & reply up to 200 languages </i>
 
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
-*Queer ♕ can detect and reply upto 200 languages by now*
+<b>Queer ♕ can detect and reply upto 200 languages by now</b>
  - /chatbot EN : Enables English only chatbot
  
-<b> Lydia </b>
-<i> PRESENTING Queer ♕'S LYDIA, EXCLUSIVE CHAT FEATURE DETECT UPTO 200 LANGUAGES & REPLY USING LYDIA AI</i>
+<b> Lydia (Stopped) </b>
+<i> Presenting Queer ♕'S Lydia, Exclusive chat feature detects up to 200 languages & reply using Lydia AI</i>
 
  - /addlydia: Activates lydia on your group
-*Daisy AI can detect and reply upto 200 languages by now*
+<b>Queer ♕ AI can detect and reply upto 200 languages by now</b>
  - /enlydia : Enables English only chat AI
  - /rmlydia : Deactivates lydia on your group (UNSTABLE)
  
@@ -306,7 +306,7 @@ __help__ = """
  - /ask <i>question</i>: Ask question from Queer ♕
  - /ask <i> reply to voice note</i>: Get voice reply
  
-<i> Lydia AI can be unstable sometimes </i>
+<i> Lydia AI has stopped their chatbot API services. Check @Intellivoid </i>
 """
 
 __mod_name__ = "Assistant"
