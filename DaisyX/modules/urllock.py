@@ -115,5 +115,6 @@ Add @QueerMusicPlayer in the group where you want to play music.
  /end: Stops media playback
 
 <i>Player cmd and all other cmds except /play are only for admins who manages group.</i>
-👀 Read full manual of Queer ♕ Music Play [here](https://telegra.ph/Queer-Music-Player-04-18-2)
+
+👀 Read full manual of Queer ♕ Music Play <a href="https://telegra.ph/Queer-Music-Player-04-18-2">here!</a>
 """
