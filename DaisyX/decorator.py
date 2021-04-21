@@ -49,7 +49,7 @@ def register(*args, cmds=None, f=None, allow_edited=True, allow_kwargs=False, **
     register_kwargs = {}
 
     if cmds and not f:
-        regex = r"\A^{}(".format("[!/]" if ALLOW_COMMANDS_FROM_EXC else "!")
+        regex = r"\A^{}(".format("[!/]" if ALLOW_COMMANDS_FROM_EXC else "/")
 
         if "not_forwarded" not in kwargs and ALLOW_F_COMMANDS is False:
             kwargs["not_forwarded"] = True
