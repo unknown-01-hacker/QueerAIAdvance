@@ -89,10 +89,17 @@ async def unlock_cmd(message, chat, strings):
 
 async def lock_parser(chat_id, rev=False):
     keywords = {
-        "all": "can_send_messages",
-        "media": "can_send_media_messages",
-        "polls": "can_send_polls",
-        "others": "can_send_other_messages",
+    "messages": "can_send_messages",
+    "stickers": "can_send_stickers",
+    "gifs": "can_send_animations",
+    "media": "can_send_media_messages",
+    "games": "can_send_games",
+    "inline": "can_use_inline_bots",
+    "link_previews": "can_add_web_page_previews",
+    "polls": "can_send_polls",
+    "group_info": "can_change_info",
+    "useradd": "can_invite_users",
+    "pin": "can_pin_messages"
     }
     current_lock = (await bot.get_chat(chat_id)).permissions
 
