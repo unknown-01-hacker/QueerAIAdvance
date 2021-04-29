@@ -107,7 +107,7 @@ async def virusscan(event):
         return
 
 
-__mod_name__ = "Virus Scan"
-__help__ = """
+_mod_name_ = "Virus Scan"
+_help_ = """
  - /scanit: Scan a file for virus (MAX SIZE = 3MB)
  """

@@ -97,9 +97,3 @@ async def _(event):
             await event.reply(res, parse_mode="markdown")
     userid = ""  # after execution
     let = ""  # after execution
-
-
-__mod_name__ = "AFK"
-__help__ = """
- - /afk [reason]: mark yourself as AFK(Away From Keyboard)
-"""

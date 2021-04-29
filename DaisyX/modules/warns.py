@@ -58,7 +58,6 @@ async def warn_cmd(message, chat, user, text):
     await warn_func(message, chat, user, text)
     msgs = [message.message_id, message.reply_to_message.message_id]
     await tbot.delete_messages(message.chat.id, msgs)
-    await message.delete()
 
 
 @get_strings_dec("warns")

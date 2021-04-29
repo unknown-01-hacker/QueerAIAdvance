@@ -41,16 +41,16 @@ def help_markup(modules):
 
 
 STICKERS = (
-    "CAACAgEAAxkBAALw12B8E5bUNQJzYT_oxviPe96IrJGnAALTAAMp9uBHsDixK2XGrCcfBA",
-    "CAACAgEAAxkBAALw2GB8E5bJ-9dZR_dFdUvUMKVEZ8AaAAL4AAMZTuFHrggDXm8VgosfBA",
-    "CAACAgEAAxkBAALw2WB8E5dcAtL4UVzBfkEWjzaRbvOsAAInAQACZxrgR1ZG-i3ceQJWHwQ",
-    "CAACAgEAAxkBAALw2mB8E5jEZ5klHk0aKSVqHycY9D7-AAIoAQADI-FHAQOxcj6SohAfBA",
-    "CAACAgEAAxkBAALw22B8E5gEDX12HTxDB0Oi2Za57ffiAALKAAPrsOBHi-65ZJzujg0fBA",
-    "CAACAgEAAxkBAALw3GB8E5oqbZTNKe4IpF_a0frN4QZvAAIJAQAC6o7hR7wWmGZMSFtzHwQ",
-    "CAACAgEAAxkBAALw3WB8E544mZU9pyrqZQhC8mr5V2LsAAITAQACDo3gR__A6s7d4SAKHwQ",
-    "CAACAgEAAxkBAALw3mB8E59AO0Msod4-KXT1h2hAwqF2AAIsAQACT1bgR1cEM-kNRroLHwQ",
-    "CAACAgEAAxkBAALw32B8E6AvTiWqvh3FPULRQOMeKtitAAIyAQACoQAB4EegU5u-5YcdOB8E",
-    "CAACAgEAAxkBAALw4GB8E6AplfhBqVmVWqFJ-WtXdZ42AAI0AQACOsXhRwKsyCGHxfzBHwQ",
+    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ",
+    "CAACAgUAAxkBAAJOG2BeljABwlCfwzHT1gzyiciBri6_AAIsAgACXBPBVgpGQRz-1qmlHgQ",
+    "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
+    "CAACAgUAAxkBAAJOHWBeljXW9QzYQ51gpCjHZHCF5Ui6AAJ7AgAC3zDBVo2xenp7JYhAHgQ",
+    "CAACAgUAAxkBAAJOHmBeljjU0_FT_QpdUUJBqVUC0nfJAAKYAgACJ_jBVvntHY_8WF27HgQ",
+    "CAACAgUAAxkBAAJOH2BeljrV68mPLu8_6n4edT20Q3IQAAJ9AgACq3LBVmLuZuNPlvkfHgQ",
+    "CAACAgUAAxkBAAJOIGBeljttuniUPykRtzkSZj3SRwKJAAI7AgACNm_BVp8TCkE6ZqCoHgQ",
+    "CAACAgUAAxkBAAJOIWBelj-P_2vtVqtkF2OMlVN3M0N4AAK3AQACSm3BVkXF2voraS2tHgQ",
+    "CAACAgUAAxkBAAJOImBelkJxUBm2rL1iPfMZfk-_9DaOAALrAgAC4T3BVniopXQVsZ4KHgQ",
+    "CAACAgUAAxkBAAJOI2BelkMO0AX_wtAc7hUZz1NixuMlAAKEAwACY4TAViVuNLTBmmkgHgQ",
 )
 
 
@@ -77,17 +77,19 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://t.me/GalaxyMusicHub"
+            strings["btn_source"], url="https://github.com/TeamDaisyX/"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/QueerAIBotUpdates"),
-        InlineKeyboardButton("Support Grup", url="https://t.me/QueerAIBotSupport"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
+        InlineKeyboardButton(
+            "👥 Support Grup", url="https://t.me/DaisySupport_Official"
+        ),
     )
     buttons.add(
         InlineKeyboardButton(
-            "Add Queer ♕ to your group",
-            url=f"https://telegram.me/QueerAIBot?startgroup=true",
+            "👸🏼 Add DaisyX to your group",
+            url=f"https://telegram.me/daisyxbot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -129,7 +131,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/QueerAIBot?start")
+        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
@@ -143,7 +145,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="Back", callback_data="get_help")
+        InlineKeyboardButton(text="🏃‍♂️ Back", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(

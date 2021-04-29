@@ -1,5 +1,8 @@
+# Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
+# Copyright (C) 2019 Aiogram
+#
 # This file is part of Daisy (Telegram Bot)
-
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -18,7 +21,7 @@ import html
 
 from aiogram.dispatcher.middlewares import BaseMiddleware
 
-from DaisyX import dp, sw
+from DaisyX import dp
 from DaisyX.decorator import register
 from DaisyX.modules import LOADED_MODULES
 from DaisyX.services.mongo import db
@@ -175,18 +178,6 @@ async def user_info(message, user, strings):
     )
 
     text += "\n"
-
-    try:
-        spamwatch = sw.get_ban(int(user["user_id"]))
-        if spamwatch:
-            text += strings["info_sw_ban"]
-            text += strings["info_sw_ban_reason"].format(
-                sw_reason=str(spamwatch.reason)
-            )
-        else:
-            pass
-    except BaseException:
-        pass  # avoids crash if api is down
 
     if await is_user_admin(chat_id, user["user_id"]) is True:
         text += strings["info_admeme"]

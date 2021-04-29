@@ -160,9 +160,9 @@ async def _(event):
         await event.reply("Reply to a voice message, to get the text out of it.")
 
 
-__mod_name__ = "Text to Speech"
+_mod_name_ = "Text to Speech"
 
-__help__ = """
+_help_ = """
  - /tts: Reply to any message to get text to speech output
  - /stt: Type in reply to a voice message(english only) to extract text from it.
 """

@@ -126,8 +126,8 @@ async def _(event):
     await send_message.edit(result, parse_mode="html")
 
 
-__mod_name__ = "Date Time"
-__help__ = """
+_mod_name_ = "Date Time"
+_help_ = """
  - /datetime [timezone]: Get the present date and time information
  
 *You can check out this [link](https://timezonedb.com/time-zones) for the available timezones*

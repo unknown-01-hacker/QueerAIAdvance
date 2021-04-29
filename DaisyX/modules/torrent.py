@@ -392,9 +392,9 @@ async def paginate_nexttorrent(event):
     )
 
 
-__help__ = """
+_help_ = """
  - /torrent <i>text</i>: Search for torrent links
     
 """
 
-__mod_name__ = "Torrent"
+_mod_name_ = "Torrent"

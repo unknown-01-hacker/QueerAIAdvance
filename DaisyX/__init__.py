@@ -72,3 +72,7 @@ BOT_USERNAME = bot_info.username
 BOT_ID = bot_info.id
 POSTGRESS_URL = get_str_key("DATABASE_URL", required=True)
 TEMP_DOWNLOAD_DIRECTORY = "./"
+
+
+# String Session
+STRING_SESSION = get_str_key("STRING_SESSION", required=True)

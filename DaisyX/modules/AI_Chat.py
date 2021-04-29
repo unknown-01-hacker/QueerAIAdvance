@@ -21,6 +21,8 @@ import re
 import emoji
 import requests
 
+IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
+IBM_WATSON_CRED_PASSWORD = "UQ1MtTzZhEsMGK094klnfa-7y_4MCpJY1yhd52MXOo3Y"
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
@@ -40,9 +42,42 @@ def extract_emojis(s):
 daisy_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
+"""
+@daisyx.on_message(
+    filters.voice & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
+    group=2,
+)
+async def hmm(client, message):
+    if not get_session(int(message.chat.id)):
+        message.continue_propagation()
+    if message.reply_to_message.from_user.id != BOT_ID:
+        message.continue_propagation()
+    previous_message = message
+    required_file_name = message.download()
+    if IBM_WATSON_CRED_URL is None or IBM_WATSON_CRED_PASSWORD is None:
+        await message.reply(
+            "You need to set the required ENV variables for this module. \nModule stopping"
+        )
+    else:
+        headers = {
+            "Content-Type": previous_message.voice.mime_type,
+        }
+        data = open(required_file_name, "rb").read()
+        response = requests.post(
+            IBM_WATSON_CRED_URL + "/v1/recognize",
+            headers=headers,
+            data=data,
+            auth=("apikey", IBM_WATSON_CRED_PASSWORD),
+        )
+        r = response.json()
+        print(r)
+        await client.send_message(message, r)
+"""
 
 
-@daisyx.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
+@daisyx.on_message(
+    filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
+)
 @admins_only
 async def hmm(_, message):
     global daisy_chats
@@ -87,14 +122,21 @@ async def hmm(_, message):
 
 
 @daisyx.on_message(
-    filters.text & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
+    filters.text
+    & filters.reply
+    & ~filters.bot
+    & ~filters.edited
+    & ~filters.via_bot
+    & ~filters.forwarded,
     group=2,
 )
 async def hmm(client, message):
     if not get_session(int(message.chat.id)):
-        message.continue_propagation()
+        return
+    if not message.reply_to_message:
+        return
     if message.reply_to_message.from_user.id != BOT_ID:
-        message.continue_propagation()
+        return
     msg = message.text
     chat_id = message.chat.id
     if msg.startswith("/") or msg.startswith("@"):
@@ -155,7 +197,7 @@ async def hmm(client, message):
         else:
             rm = msg
             # print (rm)
-            lan = translator.detect(rm)
+        lan = translator.detect(rm)
         test = rm
         if not "en" in lan and not lan == "":
             test = translator.translate(test, lang_tgt="en")
@@ -192,7 +234,9 @@ async def hmm(client, message):
             print(e)
 
 
-@daisyx.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
+@daisyx.on_message(
+    filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
+)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -225,7 +269,7 @@ async def inuka(client, message):
     else:
         rm = msg
         # print (rm)
-        lan = translator.detect(rm)
+    lan = translator.detect(rm)
     test = rm
     if not "en" in lan and not lan == "":
         test = translator.translate(test, lang_tgt="en")
@@ -269,6 +313,7 @@ async def inuka(client, message):
     & ~filters.forwarded
     & ~filters.reply
     & ~filters.channel
+    & ~filters.edited
 )
 async def inuka(client, message):
     msg = message.text
@@ -302,7 +347,7 @@ async def inuka(client, message):
     else:
         rm = msg
         # print (rm)
-        lan = translator.detect(rm)
+    lan = translator.detect(rm)
     test = rm
     if not "en" in lan and not lan == "":
         test = translator.translate(test, lang_tgt="en")
@@ -337,3 +382,20 @@ async def inuka(client, message):
         await message.reply_text(pro)
     except CFError as e:
         print(e)
+
+
+__help__ = """
+<b> Chatbot </b>
+<i> PRESENTING DAISY AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
+ - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
+* DaisyAI can detect and reply upto 200 languages by now *
+ - /chatbot EN : Enables English only chatbot
+ 
+ 
+<b> Assistant </b>
+ - /ask <i>question</i>: Ask question from daisy
+ - /ask <i> reply to voice note</i>: Get voice reply
+ 
+"""
+
+__mod_name__ = "AI Assistant"

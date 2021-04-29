@@ -63,11 +63,11 @@ async def get(event):
         )
 
 
-__help__ = """
+_help_ = """
  *You can make a file 
   name.*
  ✪ /dox tag a message <i>file name</i> example /dox example.py
  ✪ /open tag a file 
 """
 
-__mod_name__ = "Core "
+_mod_name_ = "Core "
