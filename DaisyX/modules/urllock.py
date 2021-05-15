@@ -108,6 +108,7 @@ Add @QueerMusicPlayer in the group where you want to play music.
 - /play [yt url] : Play the given YouTube url
 - /dplay : Plays the song via deezer
 - /splay : Plays the song via saavn
+
 =>> Playback ⏯ 
 
 /skip: Skips the current track
