@@ -106,7 +106,8 @@ Add @QueerMusicPlayer in the group where you want to play music.
 
 - /play: Play song using YouTube music.
 - /play [yt url] : Play the given YouTube url
-
+- /dplay : Plays the song via deezer
+- /splay : Plays the song via saavn
 =>> Playback ⏯ 
 
 /skip: Skips the current track
@@ -114,7 +115,12 @@ Add @QueerMusicPlayer in the group where you want to play music.
  /resume: Resumes the paused track
  /end: Stops media playback
 
-<i>Player cmd and all other cmds except /play are only for admins who manages group.</i>
+=>> More tools 🧑‍🔧
 
-👀 Read full manual of Queer ♕ Music Play <a href="https://telegra.ph/Queer-Music-Player-04-18-2">here!</a>
+ /admincache: Updates admin info of your group. Try if bot isn't recognize admin
+ /userbotjoin : Invite @QueerMusicPlayer userbot to your chat
+ 
+<i>Player cmd and all other cmds except /play, /dplay, /splay are only for admins who manages group.</i>
+
+👀 Read full manual of Queer ♕ Music Player <a href="https://telegra.ph/Queer-Music-Player-04-18-2">here!</a>
 """
