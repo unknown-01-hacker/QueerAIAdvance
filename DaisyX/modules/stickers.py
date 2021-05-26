@@ -192,7 +192,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "Queer ♕"
+DEFAULTUSER = "Lara ♕"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 
@@ -223,7 +223,7 @@ async def _(event):
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
     packshortname = f"DaisyX_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Queer ♕ steal it")
+    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Lara ♕ steal it")
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
