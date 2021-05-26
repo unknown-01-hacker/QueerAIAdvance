@@ -44,10 +44,10 @@ STICKERS = (
     "CAACAgIAAxkBAAIGhGCuuWAfZR1IIXbz9PVR0IYLzgYZAALTBQACP5XMCp9au9JdR8cxHgQ",
     "CAACAgIAAxkBAAIGjGCuuokyFfl4s48uffsOL92Q7vL3AAJuBQACP5XMCoY62V2IvLc1HgQ",
     "CAACAgIAAxkBAAIGhGCuuWAfZR1IIXbz9PVR0IYLzgYZAALTBQACP5XMCp9au9JdR8cxHgQ",
-    "CAACAgEAAxkBAALw2mB8E5jEZ5klHk0aKSVqHycY9D7-AAIoAQADI-FHAQOxcj6SohAfBA",
-    "CAACAgEAAxkBAALw22B8E5gEDX12HTxDB0Oi2Za57ffiAALKAAPrsOBHi-65ZJzujg0fBA",
-    "CAACAgEAAxkBAALw3GB8E5oqbZTNKe4IpF_a0frN4QZvAAIJAQAC6o7hR7wWmGZMSFtzHwQ",
+    "CAACAgIAAxkBAAIGlmCuwY91TNYkXS50gEH5-gfhh79iAAK-BQACP5XMCpuPAohdSwctHgQ",
     "CAACAgIAAxkBAAIGkmCuvcg3WJKb4TTzipOpK4HDU3D3AAJ1BAACzFRJCT4DAAHz5REltR4E",
+    "CAACAgEAAxkBAALw3GB8E5oqbZTNKe4IpF_a0frN4QZvAAIJAQAC6o7hR7wWmGZMSFtzHwQ",
+    "CAACAgIAAxkBAAIGlGCuvhX1oIZO-LN606lKZalK9dggAAItCwACC5epS3TBbP5E6Ig2HgQ",
 )
 
 
@@ -78,13 +78,13 @@ async def get_start_func(message, strings, edit=False):
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/QueerAIBotUpdates"),
-        InlineKeyboardButton("Support Grup", url="https://t.me/QueerAIBotSupport"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/amc_creations"),
+        InlineKeyboardButton("Support Grup", url="https://t.me/amc_creations"),
     )
     buttons.add(
         InlineKeyboardButton(
-            "Add Queer ♕ to your group",
-            url=f"https://telegram.me/QueerAIBot?startgroup=true",
+            "Add Lara🎀 to your group",
+            url=f"https://telegram.me/amcmanagerbot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -126,7 +126,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/QueerAIBot?start")
+        InlineKeyboardButton(text=text, url="https://t.me/amcmanagerbot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
