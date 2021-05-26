@@ -74,12 +74,12 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://t.me/GalaxyMusicHub"
+            strings["btn_source"], url="https://t.me/amc_creations"
         ),
     )
     buttons.add(
         InlineKeyboardButton(strings["btn_channel"], url="https://t.me/amc_creations"),
-        InlineKeyboardButton("Support Grup", url="https://t.me/amc_creations"),
+        InlineKeyboardButton("Support Group", url="https://t.me/amc_status_bot"),
     )
     buttons.add(
         InlineKeyboardButton(
