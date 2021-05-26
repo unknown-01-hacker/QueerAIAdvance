@@ -577,7 +577,7 @@ async def reset_security_note(message, chat, strings):
 @get_strings_dec("greetings")
 async def welcome_security_handler(message: Message, strings):
     if len(message.new_chat_members) > 1:
-        # FIXME: Queer ♕ doesnt support adding multiple users currently
+        # FIXME: lara doesnt support adding multiple users currently
         return
 
     new_user = message.new_chat_members[0]
@@ -1008,7 +1008,7 @@ async def welcome_security_passed(
 @get_strings_dec("greetings")
 async def welcome_trigger(message: Message, strings):
     if len(message.new_chat_members) > 1:
-        # FIXME: Queer ♕ doesnt support adding multiple users currently
+        # FIXME:l doesnt support adding multiple users currently
         return
 
     chat_id = message.chat.id
