@@ -22,7 +22,7 @@ async def shazamm(client, message):
     kkk = await fetch_audio(client, message)
     downloaded_file_name = kkk
     f = {"file": (downloaded_file_name, open(downloaded_file_name, "rb"))}
-    await kek.edit("**Searching For This Song In Queer ♕'s DataBase.**")
+    await kek.edit("**Searching For This Song In @amcmanagerbot's DataBase.**")
     r = requests.post("https://starkapi.herokuapp.com/shazam/", files=f)
     try:
         xo = r.json()
@@ -32,7 +32,7 @@ async def shazamm(client, message):
         )
         return
     if xo.get("success") is False:
-        await kek.edit("`Song Not Found in Queer ♕'s Database. Please Try Again.`")
+        await kek.edit("`Song Not Found in Lara's Database. Please Try Again.`")
         os.remove(downloaded_file_name)
         return
     xoo = xo.get("response")
@@ -46,7 +46,7 @@ async def shazamm(client, message):
     messageo = f"""<b>Song Shazamed.</b>
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
-<u><b>Identified Using @QueerAIBot - Join our support @QueerAIBotSupport</b></u>
+<u><b>Identified Using @Lara - Join our support @amc_status_bot</b></u>
 """
     await client.send_photo(message.chat.id, image, messageo, parse_mode="HTML")
     os.remove(downloaded_file_name)
