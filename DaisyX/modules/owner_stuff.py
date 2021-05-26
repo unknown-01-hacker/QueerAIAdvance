@@ -159,7 +159,7 @@ async def bot_stop(message):
 
 @register(cmds="restart", is_owner=True)
 async def restart_bot(message):
-    await message.reply("Queer ♕ will be restarted...")
+    await message.reply("Lara will be restarted...")
     args = [sys.executable, "-m", "DaisyX"]
     os.execl(sys.executable, *args)
 
@@ -229,7 +229,7 @@ async def get_event(message):
 
 @register(cmds="stats", is_op=True)
 async def stats(message):
-    text = f"<b>Queer ♕ {DAISY_VERSION} stats</b>\n"
+    text = f"<b>Lara {DAISY_VERSION} stats</b>\n"
 
     for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
         text += await module.__stats__()
