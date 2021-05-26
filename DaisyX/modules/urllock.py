@@ -88,40 +88,8 @@ async def hi(client, message):
         message.continue_propagation()
 
 
-__mod_name__ = "Music Player"
+__mod_name__ = "URL Block"
 __help__ = """
-<b> Queer ♕ Music Player </b>
-
-Queer Music Player plays plays music in your group's voice chat
- 
-Assistant name >> @QueerMusicPlayer
-
-<b>Setting up</b>
-
-Add @QueerMusicPlayer in the group where you want to play music.
-
-<b>Commands</b>
-
-=>> Song Playing 🎧 
-
-- /play: Play song using YouTube music.
-- /play [yt url] : Play the given YouTube url
-- /dplay : Plays the song via deezer
-- /splay : Plays the song via saavn
-
-=>> Playback ⏯ 
-
-/skip: Skips the current track
- /pause: Pause track
- /resume: Resumes the paused track
- /end: Stops media playback
-
-=>> More tools 🧑‍🔧
-
- /admincache: Updates admin info of your group. Try if bot isn't recognize admin
- /userbotjoin : Invite @QueerMusicPlayer userbot to your chat
- 
-<i>Player cmd and all other cmds except /play, /dplay, /splay are only for admins who manages group.</i>
-
-👀 Read full manual of Queer ♕ Music Player <a href="https://telegra.ph/Queer-Music-Player-04-18-2">here!</a>
+<b> Block links sent by users in your group </b>
+/urllock [on/off]: Enable/Disable URL Lock
 """
