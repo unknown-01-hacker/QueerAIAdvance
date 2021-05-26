@@ -3,8 +3,8 @@ echo "
 *********** STARTING DEPLOY ***********
 
 Queer ♕ -Base Aiogram
-(C) 2020-2021 by @NeuroticAssociation
-Support Chat is @QueerAIBotSupport.
+(C) 2020-2021 by @amc_creations
+Support Chat is @amc_creations
 
 ***************************************
 "
@@ -30,15 +30,15 @@ ech_final () {
     echo "
     
 =++---------------------------------------------++=
-Queer ♕. Deployed Successfully
+Lara. Deployed Successfully
 
  ***************************
  * |Q| |u| |e| |e| |r| |♕| *
  ******************* v1.0 ** 
 
-Thanks for deploying Queer ♕.
-(C) 2020-2021 by @NeuroticAssociation
-Support Chat is @QueerAIBotSupport.
+Thanks for deploying 
+(C) 2020-2021 by @
+Support Chat is @
 =++---------------------------------------------++=
                        Greetings from dev team :)
     "
