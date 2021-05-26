@@ -1,16 +1,16 @@
 {
-  "name": "Queer ♕",
+  "name": "Lara ♕",
   "description": "?",
   "keywords": [
     "telegram",
-    "Queer ♕",
+    "Lara ♕",
     "plugin",
-    "telegram-Queer ♕",
+    "telegram-Lara ♕",
     "fuck-TG"
   ],
-  "repository": "https://github.com/ChankitSaini/QueerAIAdvance/",
-  "website": "daisyproject.studio",
-  "success_url": "t.me/QueerAIBotUpdates",
+  "repository": "t.me/@amcmanagerbot",
+  "website": "t.me/@amcmanagerbot",
+  "success_url": "t.me/@amcmanagerbot",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
